@@ -15,6 +15,21 @@
 		26B0BA3E2604CD26008F3623 /* EventPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA3C2604CD26008F3623 /* EventPicker.xcdatamodeld */; };
 		26B0BA492604CD26008F3623 /* EventPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA482604CD26008F3623 /* EventPickerTests.swift */; };
 		26B0BA542604CD26008F3623 /* EventPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA532604CD26008F3623 /* EventPickerUITests.swift */; };
+		26B0BA732604D7A8008F3623 /* TagEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA6F2604D7A8008F3623 /* TagEvent+CoreDataClass.swift */; };
+		26B0BA742604D7A8008F3623 /* TagEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA702604D7A8008F3623 /* TagEvent+CoreDataProperties.swift */; };
+		26B0BA752604D7A8008F3623 /* TagScan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA712604D7A8008F3623 /* TagScan+CoreDataClass.swift */; };
+		26B0BA762604D7A8008F3623 /* TagScan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA722604D7A8008F3623 /* TagScan+CoreDataProperties.swift */; };
+		26B0BA9C2604E49C008F3623 /* DataSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BA9B2604E49C008F3623 /* DataSeed.swift */; };
+		26B0BAA22604FD3D008F3623 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAA12604FD3D008F3623 /* EventView.swift */; };
+		26B0BAAA2604FD6E008F3623 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAA92604FD6E008F3623 /* EventViewModel.swift */; };
+		26B0BAAF2605020F008F3623 /* TagEventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAAE2605020F008F3623 /* TagEventDetail.swift */; };
+		26B0BAB42605028B008F3623 /* EventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAB32605028B008F3623 /* EventEditView.swift */; };
+		26B0BAB9260502D3008F3623 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAB8260502D3008F3623 /* KeyboardResponder.swift */; };
+		26B0BABE26050430008F3623 /* EventTypeNamePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BABD26050430008F3623 /* EventTypeNamePicker.swift */; };
+		26B0BAC32605045A008F3623 /* EventActionNamePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAC22605045A008F3623 /* EventActionNamePicker.swift */; };
+		26B0BAC82605047A008F3623 /* EventProductNamePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAC72605047A008F3623 /* EventProductNamePicker.swift */; };
+		26B0BACD26050569008F3623 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BACC26050569008F3623 /* NavigationLazyView.swift */; };
+		26B0BAD226050634008F3623 /* TagScanRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B0BAD126050634008F3623 /* TagScanRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +64,21 @@
 		26B0BA4F2604CD26008F3623 /* EventPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B0BA532604CD26008F3623 /* EventPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPickerUITests.swift; sourceTree = "<group>"; };
 		26B0BA552604CD26008F3623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B0BA6F2604D7A8008F3623 /* TagEvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TagEvent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		26B0BA702604D7A8008F3623 /* TagEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TagEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		26B0BA712604D7A8008F3623 /* TagScan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TagScan+CoreDataClass.swift"; sourceTree = "<group>"; };
+		26B0BA722604D7A8008F3623 /* TagScan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TagScan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		26B0BA9B2604E49C008F3623 /* DataSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSeed.swift; sourceTree = "<group>"; };
+		26B0BAA12604FD3D008F3623 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		26B0BAA92604FD6E008F3623 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		26B0BAAE2605020F008F3623 /* TagEventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEventDetail.swift; sourceTree = "<group>"; };
+		26B0BAB32605028B008F3623 /* EventEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditView.swift; sourceTree = "<group>"; };
+		26B0BAB8260502D3008F3623 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		26B0BABD26050430008F3623 /* EventTypeNamePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeNamePicker.swift; sourceTree = "<group>"; };
+		26B0BAC22605045A008F3623 /* EventActionNamePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventActionNamePicker.swift; sourceTree = "<group>"; };
+		26B0BAC72605047A008F3623 /* EventProductNamePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProductNamePicker.swift; sourceTree = "<group>"; };
+		26B0BACC26050569008F3623 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		26B0BAD126050634008F3623 /* TagScanRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagScanRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +109,9 @@
 		26B0BA252604CD23008F3623 = {
 			isa = PBXGroup;
 			children = (
+				26B0BAA02604FD20008F3623 /* Views */,
+				26B0BA6E2604D748008F3623 /* Model */,
+				26B0BA642604CDAC008F3623 /* ViewModels */,
 				26B0BA302604CD23008F3623 /* EventPicker */,
 				26B0BA472604CD26008F3623 /* EventPickerTests */,
 				26B0BA522604CD26008F3623 /* EventPickerUITests */,
@@ -134,6 +167,42 @@
 				26B0BA552604CD26008F3623 /* Info.plist */,
 			);
 			path = EventPickerUITests;
+			sourceTree = "<group>";
+		};
+		26B0BA642604CDAC008F3623 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				26B0BAA92604FD6E008F3623 /* EventViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		26B0BA6E2604D748008F3623 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26B0BA6F2604D7A8008F3623 /* TagEvent+CoreDataClass.swift */,
+				26B0BA702604D7A8008F3623 /* TagEvent+CoreDataProperties.swift */,
+				26B0BA712604D7A8008F3623 /* TagScan+CoreDataClass.swift */,
+				26B0BA722604D7A8008F3623 /* TagScan+CoreDataProperties.swift */,
+				26B0BA9B2604E49C008F3623 /* DataSeed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26B0BAA02604FD20008F3623 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26B0BAA12604FD3D008F3623 /* EventView.swift */,
+				26B0BAAE2605020F008F3623 /* TagEventDetail.swift */,
+				26B0BAB32605028B008F3623 /* EventEditView.swift */,
+				26B0BAB8260502D3008F3623 /* KeyboardResponder.swift */,
+				26B0BABD26050430008F3623 /* EventTypeNamePicker.swift */,
+				26B0BAC22605045A008F3623 /* EventActionNamePicker.swift */,
+				26B0BAC72605047A008F3623 /* EventProductNamePicker.swift */,
+				26B0BACC26050569008F3623 /* NavigationLazyView.swift */,
+				26B0BAD126050634008F3623 /* TagScanRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +335,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B0BA3E2604CD26008F3623 /* EventPicker.xcdatamodeld in Sources */,
+				26B0BABE26050430008F3623 /* EventTypeNamePicker.swift in Sources */,
+				26B0BA742604D7A8008F3623 /* TagEvent+CoreDataProperties.swift in Sources */,
+				26B0BA9C2604E49C008F3623 /* DataSeed.swift in Sources */,
+				26B0BAAA2604FD6E008F3623 /* EventViewModel.swift in Sources */,
+				26B0BAC32605045A008F3623 /* EventActionNamePicker.swift in Sources */,
 				26B0BA3B2604CD26008F3623 /* Persistence.swift in Sources */,
+				26B0BA732604D7A8008F3623 /* TagEvent+CoreDataClass.swift in Sources */,
+				26B0BAD226050634008F3623 /* TagScanRowView.swift in Sources */,
+				26B0BAC82605047A008F3623 /* EventProductNamePicker.swift in Sources */,
+				26B0BA752604D7A8008F3623 /* TagScan+CoreDataClass.swift in Sources */,
 				26B0BA342604CD23008F3623 /* ContentView.swift in Sources */,
+				26B0BAB42605028B008F3623 /* EventEditView.swift in Sources */,
+				26B0BAB9260502D3008F3623 /* KeyboardResponder.swift in Sources */,
+				26B0BAAF2605020F008F3623 /* TagEventDetail.swift in Sources */,
+				26B0BACD26050569008F3623 /* NavigationLazyView.swift in Sources */,
+				26B0BA762604D7A8008F3623 /* TagScan+CoreDataProperties.swift in Sources */,
 				26B0BA322604CD23008F3623 /* EventPickerApp.swift in Sources */,
+				26B0BAA22604FD3D008F3623 /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

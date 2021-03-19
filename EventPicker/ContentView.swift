@@ -10,16 +10,28 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    @EnvironmentObject var event:EventViewModel
+    
+    
+    @State private var editMode = EditMode.inactive
+    
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \TagScan.eid, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var items: FetchedResults<TagScan>
 
     var body: some View {
+        
+        
         List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+            ForEach(items) { oneTage in
+                NavigationLink(destination:
+                                NavigationLazyView(EventView(singleTagScan: oneTage, tagScans: items, editMode: editMode
+                                                             //, selectKeeper: selectKeeper
+                                ))
+                                .environmentObject(event)) {
+                    TagScanRowView(tagScan: oneTage, showDetails: false)
+                }
             }
             .onDelete(perform: deleteItems)
         }
@@ -32,12 +44,17 @@ struct ContentView: View {
                 Label("Add Item", systemImage: "plus")
             }
         }
+        .onAppear()
+        {
+            let dataSeed = DataSeed(context: self.viewContext)
+            dataSeed.seed()
+        }
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newItem = TagScan(context: viewContext)
+            newItem.scanDate = Date()
 
             do {
                 try viewContext.save()

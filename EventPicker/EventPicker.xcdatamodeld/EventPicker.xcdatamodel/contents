@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EventAction" representedClassName="EventAction" syncable="YES" codeGenerationType="class">
+        <attribute name="actionId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="actionName" optional="YES" attributeType="String"/>
+        <attribute name="sort" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="tagEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TagEvent" inverseName="eventAction" inverseEntity="TagEvent"/>
+    </entity>
+    <entity name="EventProduct" representedClassName="EventProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="actionId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="actionName" optional="YES" attributeType="String"/>
+        <attribute name="productId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <relationship name="tagEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TagEvent" inverseName="eventProduct" inverseEntity="TagEvent"/>
+    </entity>
+    <entity name="EventType" representedClassName="EventType" syncable="YES" codeGenerationType="class">
+        <attribute name="sort" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="typeId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="typeName" optional="YES" attributeType="String"/>
+        <relationship name="tagEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TagEvent" inverseName="eventType" inverseEntity="TagEvent"/>
+    </entity>
+    <entity name="TagEvent" representedClassName="TagEvent" syncable="YES">
+        <attribute name="actionId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="eid" optional="YES" attributeType="String"/>
+        <attribute name="eventDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="productId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="typeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="eventAction" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="EventAction" inverseName="tagEvent" inverseEntity="EventAction"/>
+        <relationship name="eventProduct" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="EventProduct" inverseName="tagEvent" inverseEntity="EventProduct"/>
+        <relationship name="eventType" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="EventType" inverseName="tagEvent" inverseEntity="EventType"/>
+        <relationship name="tagScan" maxCount="1" deletionRule="Nullify" destinationEntity="TagScan" inverseName="tagEvent" inverseEntity="TagScan"/>
+    </entity>
+    <entity name="TagScan" representedClassName="TagScan" syncable="YES">
+        <attribute name="eid" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="scanDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="tagEvent" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TagEvent" inverseName="tagScan" inverseEntity="TagEvent"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="EventType" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="EventAction" positionX="-63" positionY="9" width="128" height="89"/>
+        <element name="EventProduct" positionX="-54" positionY="27" width="128" height="104"/>
+        <element name="TagScan" positionX="-36" positionY="54" width="128" height="89"/>
+        <element name="TagEvent" positionX="-18" positionY="72" width="128" height="209"/>
     </elements>
 </model>

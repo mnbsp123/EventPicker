@@ -13,9 +13,10 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        for current in 0..<10 {
+            let newItem = TagScan(context: viewContext)
+            newItem.eid = "98765432109876" + String(current)
+            newItem.scanDate = Date()
         }
         do {
             try viewContext.save()
@@ -27,11 +28,24 @@ struct PersistenceController {
         }
         return result
     }()
+    
+    public var context: NSManagedObjectContext {  // (1)
+        get {
+            return self.container.viewContext
+        }
+    }
 
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "EventPicker")
+        
+        let url = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("EventPicker.sqlite")
+
+        assert(FileManager.default.fileExists(atPath: url.path))
+        
+        try! container.persistentStoreCoordinator.destroyPersistentStore(at: url, ofType: "sqlite", options: nil)
+        
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -51,5 +65,18 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+    }
+
+    
+    func save(){
+        let viewContext = container.viewContext
+        if viewContext.hasChanges{
+            do{
+                try viewContext.save()
+            }
+            catch let error {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
