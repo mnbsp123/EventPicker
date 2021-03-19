@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "93005E53-0B49-47D4-A47E-A9AC7F3E614F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF44C567-0898-4381-8B3D-6C9F4A98CF3B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventPicker/Persistence.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "preview"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06C7FD62-94BF-45DA-8538-7EDEC9AC9B0A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventPicker/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "deleteItems(offsets:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "06C7FD62-94BF-45DA-8538-7EDEC9AC9B0A - 4484adb2caed8240"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in EventPicker.ContentView.(deleteItems in _E23470A83E05C6D51537C19AD1CE0794)(offsets: Foundation.IndexSet) -&gt; ()"
+                  moduleName = "EventPicker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/puppb/Source/EventPicker/EventPicker/EventPicker/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "06C7FD62-94BF-45DA-8538-7EDEC9AC9B0A - 80ccc7ff51149183"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int) -&gt; __C.NSManagedObject in closure #1 () -&gt; () in EventPicker.ContentView.(deleteItems in _E23470A83E05C6D51537C19AD1CE0794)(offsets: Foundation.IndexSet) -&gt; ()"
+                  moduleName = "EventPicker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/puppb/Source/EventPicker/EventPicker/EventPicker/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "06C7FD62-94BF-45DA-8538-7EDEC9AC9B0A - a0d772bf2ec84f82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 (__C.NSManagedObject) -&gt; () in implicit closure #1 (__C.NSManagedObjectContext) -&gt; (__C.NSManagedObject) -&gt; () in closure #1 () -&gt; () in EventPicker.ContentView.(deleteItems in _E23470A83E05C6D51537C19AD1CE0794)(offsets: Foundation.IndexSet) -&gt; ()"
+                  moduleName = "EventPicker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/puppb/Source/EventPicker/EventPicker/EventPicker/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "377EC5DB-31FC-4013-A831-737AD36BB5D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventPicker/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "addItem()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
