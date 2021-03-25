@@ -21,6 +21,7 @@ struct EventPickerApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(event)
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
